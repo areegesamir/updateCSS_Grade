@@ -1,0 +1,86 @@
+/* Styles for the report card */
+.report-card {
+    width: calc(29% - 20px); /* Adjust width to fit 3 cards in one row with spacing */
+    position: absolute;
+    left: 6%; /* Position from the left */
+    top: 5%; /* Position from the top */
+    margin-bottom: 20px; /* Adjust margin-bottom */
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.195);
+    background-color: #fff;
+  }
+  /* Center align the content within the card */
+  /* .card-content {
+    text-align: center;
+  } */
+  
+  /* Style the report title */
+  h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #534454;
+    
+  }
+  
+  /* Style the report date */
+  .report-date {
+    font-size: 14px;
+    color: #666;
+
+
+    padding: 5px 10px;
+    margin-right: 8px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+  }
+  
+  /* Style each label */
+  .label {
+    display: inline-block;
+    padding: 5px 10px;
+    margin-right: 8px;
+    border-radius: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #342b37;
+  }
+   
+ 
+  /* Media query for responsive design */
+  @media (max-width: 768px) {
+    .report-card {
+      width: 100%; /* Full width on smaller screens */
+      margin-right: 0;
+    }
+  }
+ 
+/* Styles for the container */
+.container {
+    width: 100%;
+    max-width: 400px; /* Adjust as needed */
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 8px;
+    /* background-color: #f8f9fa; */
+  }
+  
+  
+  /* Styles for the box */
+  .box {
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #60526354;
+  }
+  
+
+  .box p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #41353f;
+  }
+  

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page with Sidebar</title>
+    <link rel="stylesheet" href="./LeftSideBar.css">
+    <link rel="stylesheet" href="./RightSideBar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="./HomePage.css">
+    <link rel="stylesheet" href="./homewithgraph.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- Include Chart.js -->
+</head>
+<body>
+    
+    <!-- ledt sideabr -->
+    <div class="sidebar" id="sidebar">
+        <ul>
+            <li><a href="#" onclick="navigate('home')"><i class="fas fa-home"></i></a></li>
+            <li><a href="#" onclick="navigate('security')"><i class="fas fa-shield-alt"></i></a></li>
+            <li><a href="#" onclick="navigate('logout')"><i class="fas fa-sign-out-alt"></i></a></li>
+        </ul>
+    </div>
+
+    <!-- right sideabr -->
+    <div class="right-sidebar">
+        <div class="profileInfo">
+            <img src="./Logo-1.png" alt="Profile" class="profile-picture">
+            <p class="username">John Doe</p>
+        </div>
+        <ul class="sidebar-list">
+            <li>Live Stream</li>
+            <li>Fall Reports</li>
+            <li>User Management</li>
+        </ul>
+    </div>
+<!--main dashboard -->
+    <div class="main-container">
+        <div class="card-container">
+            <div class="card">
+                <div class="card-content">
+                    <i class="fas fa-check-circle icon"></i>
+                <div class="card-text">Detected Falls</div>
+                </div>
+                <div class="card-counter" id="fallsCounter">15</div>
+            </div>
+            <div class="card">
+                <div class="card-content">
+                    <i class="fas fa-bell icon"></i>
+                <div class="card-text">Submited Repoets</div>
+                </div>
+                <div class="card-counter" id="alertsCounter">3</div>
+            </div>
+            
+            <div class="card">
+                <div class="card-content">
+                    <i class="fas fa-user-circle icon"></i> 
+                <div class="card-text">Health Providers</div>
+                </div>
+                <div class="card-counter" id="profilesCounter">50</div>   
+            </div>
+        </div>
+
+        <!-- stream section -->
+        <div class="stream-section">
+            <div class="stream-container">
+                <h3>Detected Falls</h3>
+                <div class="chart-container">
+                    <canvas id="fallChart"></canvas> <!-- Canvas for the chart -->
+                </div>
+            </div>
+         </div>
+    </div>
+
+<!-- the upper part of the screen  -->
+    
+    
+   
+    <!-- the right part  -->
+    <div class="right-section">
+        <div class="right-card">
+            <div class="right-card-content">
+                <div class="right-card-text">Detected Falls</div>
+                <div class="pie-chart"> <!-- Pie chart visualization -->
+                    <svg width="70" height="80" > <!-- SVG element for pie chart -->
+                        <circle class="accuracy-circle" r="36" cx="10" cy="20" stroke="#cb62c2" stroke-width="9" fill="none" /> <!-- Dynamic pie chart -->
+                    </svg>
+                    <p id="accuracy-percentage">45%</p> 
+                </div>
+            </div>
+        </div>
+        <div class="right-card">  
+            <div class="right-card-content">
+                <div class="right-card-text">Alerts</div>
+                <div class="pie-chart2"> <!-- Pie chart visualization -->
+                    <svg width="50" height="30" > <!-- SVG element for pie chart -->
+                        <circle class="accuracy-circle" r="36" cx="10" cy="20" stroke="#cb62c2" stroke-width="9" fill="none" /> <!-- Dynamic pie chart -->
+                    </svg>
+                    <p id="accuracy-percentage">15%</p> 
+                </div>
+            </div>
+        </div>
+        <div class="right-card">
+            <div class="right-card-content">
+                <div class="right-card-text">
+                    <a href="#" style="text-decoration: none; top: 0px;"><p>Communication Center</p></a>
+                </div>
+                <img src="./commuincation center.png" alt="Communication Image" class="communication-img">
+            </div>
+        </div>        
+    </div>
+</div>
+
+    <!-- Font Awesome CDN (for icons) -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+
+     <!-- stream section  -->
+
+     
+     
+       
+    
+</div>
+    <script src="./RightSideBar.jsx"></script>
+    <script src="./LeftSideBar.jsx"></script>
+    <script src="./homewithgraph.js"></script>
+    <script src="./piecircle.js"></script>
+    
+</body>
+</html>

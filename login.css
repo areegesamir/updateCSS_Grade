@@ -1,0 +1,119 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align items at the start of the cross axis */
+    background-image: url('pattern.png'); /* Specify the path to your background image */
+    background-color: #f8f9fa; /* Optional background color */
+    background-size: cover;
+}
+
+.container {
+    display: flex;
+    align-items: center; /* Center items vertically within the container */
+    max-width: 1200px; /* Set max-width for the container */
+    width: 80%; /* Use a percentage for width to make it responsive */
+    margin-top: 160px; /* Adjust top margin as needed */
+}
+
+.image-container {
+    flex: 1; /* Take up remaining space */
+    padding: 10px; /* Add padding for spacing */
+}
+
+.image-container img {
+    max-width: 100%; /* Ensure image does not exceed container width */
+    height: auto; /* Maintain aspect ratio */
+}
+.image-container h1{
+    text-align: center;
+    margin-right: 250px; 
+    color: #4c3752;
+    font-size: 60px;
+    
+}
+
+.form-container {
+    width: 350px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.184); 
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.form-container h2 {
+    text-align: center;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 95%;
+    padding: 8px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #3f263b;
+    background-color: rgba(255, 255, 255, 0.184);
+}
+/* .btn{
+    align-items: center;
+} */
+button {
+    width: 40%;
+    align-items: center;
+    background: linear-gradient(to right, #3c324b, #7b6f7f);
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    padding: 10px 40px;
+    border-radius: 30px;
+}
+
+button:hover {
+    background: linear-gradient(to right, #3c324b, #5e5660);
+}
+.remember-me {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.remember-me input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.forgot-password {
+    float: right;
+    font-size: 14px;
+    text-decoration: none;
+    margin-bottom: 30px;
+    color: #007bff;
+}
+
+/* Media query for responsive design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        align-items: center; /* Center items horizontally */
+    }
+
+    .image-container, .form-container {
+        width: 90%; /* Adjust width for smaller screens */
+        margin-bottom: 20px; /* Add bottom margin between the containers */
+    }
+}

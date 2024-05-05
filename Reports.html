@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page with Sidebar</title>
+    <link rel="stylesheet" href="./LeftSideBar.css">
+    <link rel="stylesheet" href="./RightSideBar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="./Report.css">
+</head>
+<body>
+    <!-- ledt sideabr -->
+    <div class="sidebar" id="sidebar">
+        <ul>
+            <li><a href="#" onclick="navigate('home')"><i class="fas fa-home"></i></a></li>
+            <li><a href="#" onclick="navigate('security')"><i class="fas fa-shield-alt"></i></a></li>
+            <li><a href="#" onclick="navigate('logout')"><i class="fas fa-sign-out-alt"></i></a></li>
+        </ul>
+    </div>
+    
+     <!-- right sideabr -->
+    <div class="right-sidebar">
+        <div class="profileInfo">
+            <img src="./Logo-1.png" alt="Profile" class="profile-picture">
+            <p class="username">John Doe</p>
+        </div>
+        <ul class="sidebar-list">
+            <li>Live Stream</li>
+            <li>Fall Reports</li>
+            <li>User Management</li>
+        </ul>
+    </div>
+
+    <!-- main content -->
+    <div class="main-content">
+        <!-- Profile Section -->
+        <div class="profile">
+            <div class="profile-details">
+                    <img src="./Profile.png" alt="Profile Picture" class="profilePicture">
+                    <table width="50%" cellpadding="0" cellspacing="0">
+                        <tr><td><div class="user_name"> Roshdy</div>
+                        <div>Submited Report: <span class="count">10</span></div>
+                        </td></tr>
+                    </table>
+                <div class="icon">
+                    <p class="view-reports-text"><a href="./viewReports.html">View Report </a></p>
+                    <a href=""><i class="fa fa-eye"></i></a>
+                </div>
+            </div>
+           
+        </div>
+
+       
+        
+    </div>
+</div>
+    <script src="./RightSideBar.jsx"></script>
+    <script src="./LeftSideBar.jsx"></script>
+</body>
+</html>

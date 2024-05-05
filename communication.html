@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Communication With Staff</title>
+<link rel="stylesheet" href="./LeftSideBar.css">
+    <link rel="stylesheet" href="./RightSideBar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="./communication.css">
+
+</head>
+<body>
+     <!-- ledt sideabr -->
+     <div class="sidebar" id="sidebar">
+        <ul>
+            <li><a href="#" onclick="navigate('home')"><i class="fas fa-home"></i></a></li>
+            <li><a href="#" onclick="navigate('security')"><i class="fas fa-shield-alt"></i></a></li>
+            <li><a href="#" onclick="navigate('logout')"><i class="fas fa-sign-out-alt"></i></a></li>
+        </ul>
+    </div>
+    
+     <!-- right sideabr -->
+    <div class="right-sidebar">
+        <div class="profileInfo">
+            <img src="./roshdy abaza.jpg" alt="Profile" class="profile-picture">
+            <p class="username">John Doe</p>
+        </div>
+        <ul class="sidebar-list">
+            <li>Fall Reports</li>
+            <li>User Management</li>
+        </ul>
+    </div>
+
+    <!-- Communication -->
+    <h1>Communication With Staff</h1>
+
+    <div class="form-group">
+        <label for="to">To:</label>
+        <input type="radio" id="all" name="all" >
+        <label for="all">Select All</label>
+        <input type="text" id="user" name="user" placeholder="Enter User name" required>
+        
+    </div>
+
+    <div class="form-group">
+        <label for="message">Write your message:</label>
+        <textarea id="message" name="message"  required></textarea>
+    </div>
+
+    <button type="submit" class="btn-save">Send</button>
+    <button type="reset" class="btn-cancel">Cancel</button>
+    <script src="./communication.jsx"></script>
+</body>
+</html>

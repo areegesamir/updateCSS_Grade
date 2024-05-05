@@ -1,0 +1,103 @@
+/* Reset default margin and padding */
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+/* Ensure full height for body */
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    font-family: Arial, sans-serif;
+    background-color: white;
+}
+
+/* Container for the form */
+.contanier {
+    width: 70%; /* Adjust based on your preference */
+    background-color: rgba(255, 255, 255, 0);
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+h2{
+    margin-top: 5%;
+    margin-bottom: 5%;   
+    font-size: 28px;
+}
+
+/* Form styling */
+form {
+    width: 100%;
+    margin-left: 1.5%;
+}
+
+.form-group {
+    margin-bottom: 30px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input {
+    width: 67%;
+    margin-left: 2%; 
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    border: none;
+    background-color: rgb(242, 242, 242)
+}
+#email{
+    margin-left: 5%; 
+}
+#mobile{
+    margin-left: 4.5%; 
+}
+
+
+/* Button styling */
+.btn {
+    font-size: 100%;
+    padding: 10px 40px;
+    border-radius: 30px;
+    size: 50px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    /* justify-content: center; */
+    margin-top: 2%;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.btn-save {
+    background-color: #46385b;
+    color: #fff;
+    background: linear-gradient(to right, #3c324b, #7b6f7f); /* Gradient background */
+    margin-left: 25%;
+}
+
+.btn-cancel {
+    background-color: white ;
+    color: #0e0d0d;
+    /* border-color:#0e0d0d; */
+}
+
+/* Spacing between buttons */
+.form-group .btn {
+    margin-right: 4%; /* Adjust the gap between buttons */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .contanier {
+        width: 90%; /* Adjust for smaller screens */
+    }
+}

@@ -1,0 +1,64 @@
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.right-sidebar {
+  position: fixed;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 200px;
+  background: linear-gradient(to bottom, #1f1f2d, #e5caec); /* Gradient background */
+  color: #fff;
+  padding-top: 60px;
+  overflow-y: auto;
+  /* background-image: url('file.png');
+  opacity: 0.9; */
+}
+
+.profileInfo {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.profile-picture {
+  width: 100px;
+  height: 100px;
+  border-radius: 30%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.username {
+  margin-left: 15%;
+  font-size: 18px;
+  font-weight: bold;
+  color:rgb(61, 51, 65);
+  padding: 10px; 
+  padding-left: 20px; /* Additional 20px padding for the left side */
+  background-color: white; 
+  display: inline-block;
+  width: calc(100% - 30px); /* Adjust width to account for total padding (20px + 10px) */
+  box-sizing: border-box; 
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px; 
+}
+
+.sidebar-list {
+  list-style-type: none;
+  padding: 3px;
+  margin-top: 50px;
+}
+
+.sidebar-list li {
+  padding: 10px 10px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.sidebar-list li:hover {
+  background-image: linear-gradient(to right, rgb(61, 51, 65), rgb(147, 132, 158));
+}

@@ -1,0 +1,55 @@
+
+
+.pie-chart {
+    display: flex; 
+    justify-content:right;
+    align-items:flex-end;
+    flex-direction: column; 
+}
+
+.pie-chart svg {
+    margin-bottom: 10px; /* Space below the SVG */
+   
+}
+
+/* the neww code  */
+.pie-chart {
+    position: relative; /* Set position relative for absolute positioning */
+    width: 60px; /* Width of the pie chart container */
+    height: 80px; /* Height of the pie chart container */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center child elements vertically */
+    align-items: center; /* Center child elements horizontally */
+}
+.pie-chart2 {
+    position: relative; /* Set position relative for absolute positioning */
+    width: 60px; /* Width of the pie chart container */
+    height: 80px; /* Height of the pie chart container */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center child elements vertically */
+    align-items: center; /* Center child elements horizontally */
+}
+
+.pie-chart p {
+    position: absolute; /* Position the percentage text absolutely */
+    top: 30%; /* Align text vertically in the middle */
+    left: 30%; /* Align text horizontally in the middle */
+    transform: translate(-50%, -50%); /* Center the text precisely */
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+}
+.pie-chart2 p {
+    position: absolute; /* Position the percentage text absolutely */
+    top: 30%; /* Align text vertically in the middle */
+    left: 30%; /* Align text horizontally in the middle */
+    transform: translate(-50%, -50%); /* Center the text precisely */
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+}
+.pie-chart svg circle {
+    transition: stroke-dasharray 1s ease-in-out; /
+}

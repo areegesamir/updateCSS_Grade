@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard Cards</title>
+    <link rel="stylesheet" href="./homewithgraph.css">
+    <script src="./piecircle.js"></script> <!-- Include JavaScript for dynamic updates -->
+</head>
+<body>
+    <div class="dashboard-container">
+        <!-- Fall Detection Accuracy Card -->
+        <div class="card">
+            <h3>Fall Detection Accuracy</h3> <!-- Card Title -->
+            <div class="pie-chart"> <!-- Pie chart visualization --> 
+                <svg width="60" height="80"> <!-- SVG element for pie chart -->
+                    <circle class="accuracy-circle" r="19" cx="10" cy="20" stroke="pink" stroke-width="7" fill="none" /> <!-- Dynamic pie chart -->
+                    
+                </svg>
+                <p id="accuracy-percentage">75%</p> <!-- Percentage text -->
+            </div>
+        </div>
+
+        <!-- Failed Alerts Card -->
+        <div class="card">
+            <h3>Failed Alerts</h3> <!-- Card Title -->
+            <div class="pie-chart"> <!-- Pie chart visualization -->
+                <svg width="50" height="50"> <!-- SVG element for pie chart -->
+                    <circle class="failed-circle" r="25" cx="25" cy="15" stroke="purple" stroke-width="6" fill="none" /> <!-- Dynamic pie chart -->
+                </svg>
+                <p id="failed-percentage">25%</p> <!-- Percentage text -->
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,57 @@
+body {
+font-family: Arial, sans-serif;
+margin: 0;
+padding: 0;
+}
+
+.sidebar {
+position: fixed;
+left: 0;
+top: 0;
+bottom: 0;
+width: 70px;
+background: linear-gradient(to bottom, #1f1f2d, #e5caec); /* Gradient background */
+color: #fff;
+padding-top: 60px;
+overflow-y: auto;
+/* background-image: url('pattern.png');
+opacity: 0.9; */
+}
+
+.sidebar ul {
+list-style-type: none;
+padding: 0;
+margin-top: 90px;
+}
+
+.sidebar ul li {
+padding: 10px;
+text-align: center;
+}
+
+.sidebar a {
+text-decoration: none;
+color: #fff;
+display: block;
+font-size: 26px;/* Adjust the icon size (increase to make icons larger) */
+background: linear-gradient(to right, rgb(91, 67, 101), rgb(190, 120, 172));
+-webkit-background-clip: text; 
+-webkit-text-fill-color: transparent; 
+}
+
+
+.content {
+    margin-left: 80px;
+    padding: 10px;
+} 
+
+.sidebar li:hover {
+    margin-left: 15%;
+    background-color: white;
+    box-sizing: border-box; /* Include padding in width calculation */
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px; 
+}
+
+
+
